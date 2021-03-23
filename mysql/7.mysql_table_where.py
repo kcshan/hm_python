@@ -161,6 +161,24 @@
 # select sum(height) / count(*) from students where gender='男';
 # select avg(height) from students where gender='男';
 
+# 求平均值
+# 求男生的平均身高，聚合函数不统计null值, 平均身高有误
+# select avg(height) from students where gender=1;
+# 求男生的平均身高，包含身高是null的
+# select avg(ifnull(height, 0)) from students where gender=1;
+# 注意点：聚合函数不会对空值进行统计
+# ifnull函数判断指定的字段是否是空值，如果是空值使用默认值0
+
+# 分组查询
+# 学习目标：能够写出分组查询的SQL语句
+# 分组查询基本的语法格式如下
+# group by 列名 [having 条件表达色][with rollup];
+# 说明:
+# 列名：是指按照指定字段的值进行分组
+# having: 条件表达式，用来过滤分组后的数据
+# with rollup: 在所有记录的最后加上一条记录，显示select查询时聚合函数的统计和计算结果
+
+# --
 # 查询性别的种类
 #
 
