@@ -14,3 +14,10 @@
 
 # 使用左连接查询学生表与班级表
 # select * from students as s left join classes as c on s.c_id = c.id;
+# select * from students s left join classes c on s.c_id = c.id;
+# 左连接查询，根据左表查询右表，如果右表数据不存在使用null填充
+# left左边是左表, left右边是右表
+
+
+
+
