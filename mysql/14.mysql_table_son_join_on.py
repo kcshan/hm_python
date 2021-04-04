@@ -17,7 +17,13 @@
 # select * from classes where id in (select c_id from students where c_id is not null);
 
 # 查找年龄最大，身高最高的学生
-# 
+# select max(age) from students;
+# select max(height) from students;
+# select * from students where age = (select max(age) from students);
+# select * from students where height = (select max(height) from students);
+# select * from students where age = (select max(age) from students) and height = (select max(height) from students);
+# select * from students where (age, height) = (select max(age), max(height) from students);
+# 子查询是一个完整的查询语句，子查询的执行顺序，先执行子查询然后主查询根据子查询的结果再执行
 
 # 为学生版的cls_id字段添加外键约束
 #

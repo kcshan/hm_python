@@ -14,12 +14,12 @@
 # );
 
 # 修改表 - 添加birthday字段
-# alter table 表名 add 列名 类型 约束;
+# alter table 表名 add 列名 类型及约束;
 # 例：
 # alter table students add birthday datetime;
 
 # 修改表 - 修改字段类型
-# alter table 表名 modify 列名 类型 约束;
+# alter table 表名 modify 列名 类型及约束;
 # 例：
 # alter table students modify birthday date not null;
 # modify 只能修改字段类型和约束，不能修改字段名
