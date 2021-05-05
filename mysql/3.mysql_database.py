@@ -2,6 +2,9 @@
 # mysql -uroot -p
 # 输入密码
 
+# 清屏
+# system clear;
+
 # 显示当前时间，记住结尾带;
 # select now();
 
