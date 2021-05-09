@@ -55,7 +55,16 @@
 # select name,price from goods where cate_name = '超级本';
 
 # 2.显示商品的分类
+# select distinct cate_name from goods;
 # select cate_name from goods group by cate_name;
 
 # 3.求所有电脑产品的平均价格,并且保留两位小数
 # select round(avg(price),2) as avg_price from goods;
+
+# 4.显示每种商品的平均价格
+# select cate_name,avg(price) from goods group by cate_name;
+
+# 5.查询每种类型的商品中 最贵、最便宜、平均价、数量
+# select cate_name,max(price),min(price),avg(price),count(*) from goods group by cate_name;
+
+# 
