@@ -67,4 +67,5 @@
 # 5.查询每种类型的商品中 最贵、最便宜、平均价、数量
 # select cate_name,max(price),min(price),avg(price),count(*) from goods group by cate_name;
 
-# 
+# 6.查询所有价格大于平均价格的商品，并且按价格降序排序
+# select id,name,price from goods where price > (select round(avg(price),2) as avg_price from goods) order by price desc;
