@@ -24,3 +24,4 @@
 
 # -- 添加移动设备分类信息
 # insert into good_cates(name) values('移动设备');
+# select * from good_cates;
